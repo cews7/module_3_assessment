@@ -28,4 +28,5 @@ group :development, :test do
   gem 'rb-readline'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'database_cleaner'
 end
