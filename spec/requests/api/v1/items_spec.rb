@@ -23,7 +23,10 @@ describe "Items API" do
   end
 
   it "create single item" do
-    
+
+    post api_v1_items_path(id: 1, name: "name", description: "description", image_url: "image_url")
+
+    expect(status).to eq 201
   end
 
   it "delete single item" do
