@@ -22,8 +22,8 @@ describe "Items API" do
     expect(@item.image_url).to be_a String
   end
 
-  it "text" do
-
+  it "create single item" do
+    
   end
 
   it "delete single item" do
