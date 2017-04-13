@@ -13,6 +13,7 @@ gem "therubyracer"
 gem "less-rails-bootstrap"
 gem "figaro"
 gem "faraday"
+gem 'active_model_serializers'
 
 group :development do
   gem "spring"
@@ -26,4 +27,7 @@ group :development, :test do
   gem "rspec-rails"
   gem "pry", :require => "pry"
   gem 'rb-readline'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'database_cleaner'
 end
