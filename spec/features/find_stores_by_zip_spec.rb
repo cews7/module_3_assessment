@@ -7,6 +7,7 @@ describe "As a User" do
 
     # And I fill in a search box with "80202" and click "search"
     fill_in('search', :with => '80202')
+    click_on "search"
 
     # Then my current path should be "/search" (ignoring params)
     expect(current_path).to eq "/search"

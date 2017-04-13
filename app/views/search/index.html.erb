@@ -1,0 +1,15 @@
+<h1>16 Total Stores</h1>
+
+<div class="container">
+  <div class="row">
+    <% @stores.each do |store| %>
+    <ul>
+      Store Name: <li><%= store.name %></li>
+      City: <li><%= store.city %></li>
+      Distance: <li> <%= store.distance %> </li>
+      Phone: <li> <%= store.phone %> </li>
+      Type: <li> <%= store.type %> </li>
+    </ul>
+  </div>
+  <% end %>
+</div>

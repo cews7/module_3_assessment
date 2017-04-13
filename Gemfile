@@ -25,4 +25,5 @@ group :development, :test do
   gem "launchy"
   gem "rspec-rails"
   gem "pry", :require => "pry"
+  gem 'rb-readline'
 end
