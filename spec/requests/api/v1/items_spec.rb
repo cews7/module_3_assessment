@@ -12,11 +12,25 @@ describe "Items API" do
 
   it "shows a single item" do
     @item = create(:item)
-    binding.pry
+
     get "api/v1/items/#{@item.id}"
 
     expect(status).to eq 200
     expect(@item.id).to eq 1
-    expect(@)
+    expect(@item.name).to be_a String
+    expect(@item.description).to be_a String
+    expect(@item.image_url).to be_a String
+  end
+
+  it "text" do
+
+  end
+
+  it "delete single item" do
+    @item = create(:item)
+
+    delete api_v1_item_path(@item)
+
+    expect(status).to eq 204
   end
 end
