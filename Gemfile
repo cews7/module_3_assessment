@@ -26,4 +26,6 @@ group :development, :test do
   gem "rspec-rails"
   gem "pry", :require => "pry"
   gem 'rb-readline'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
